@@ -1,101 +1,85 @@
 import { createGlobalStyle } from "styled-components";
 
-
 export const GlobalStyle = createGlobalStyle`
+  :root {
+    --color-primary: ${(props) => props.theme.colors.primary};
+    --color-primary-50: ${(props) => props.theme.colors.primary50};
+    --color-secondary: ${(props) => props.theme.colors.secondary};
+    --color-secondary-50: ${(props) => props.theme.colors.secondary50};
+    --color-tertiary: ${(props) => props.theme.colors.tertiary};
+    --color-tertiary-50: ${(props) => props.theme.colors.tertiary50};
+    --color-quaternary: ${(props) => props.theme.colors.quaternary};
+    --color-quaternary-50: ${(props) => props.theme.colors.quaternary50};
+    --facebook-color: ${(props) => props.theme.colors.facebook};
+    --instagram-color: ${(props) => props.theme.colors.instagram};
+    --linkdIn-color: ${(props) => props.theme.colors.linkedIn};
 
-:root{
-    --color-primary: #FF2253;
-    --color-primary-50: #FFE9EE;
+    --grey-5: ${(props) => props.theme.colors.grey5};
+    --grey-4: ${(props) => props.theme.colors.grey4};
+    --grey-3: ${(props) => props.theme.colors.grey3};
+    --grey-2: ${(props) => props.theme.colors.grey2};
+    --grey-1: ${(props) => props.theme.colors.grey1};
 
-    --color-secondary: #4ACA94;
-    --color-secondary-50: #E4F7EF;
+    --title1-font-size: ${(props) => props.theme.fontSizes.title1};
+    --title2-font-size: ${(props) => props.theme.fontSizes.title2};
+    --title3-font-size: ${(props) => props.theme.fontSizes.title3};
+    --title4-font-size: ${(props) => props.theme.fontSizes.title4};
+    --headline-font-size: ${(props) => props.theme.fontSizes.headline};
+    --body-font-size: ${(props) => props.theme.fontSizes.body};
+    --caption-font-size: ${(props) => props.theme.fontSizes.caption};
+    --detail-font-size: ${(props) => props.theme.fontSizes.detail};
 
-    --color-tertiary: #FF2253;
-    --color-tertiary-50: #FFE9EE;
+    --font-family: ${(props) => props.theme.fontFamily};
+    --font-weight-bold: ${(props) => props.theme.fontWeight.bold};
+    --font-weight-regular: ${(props) => props.theme.fontWeight.regular};
 
-    --color-quaternary: #4ACA94;
-    --color-quaternary-50: #E4F7EF;
-
-    --facebook-color: #FF2253;
-    --instagram-color: #FFE9EE;
-    --linkdIn-color: #4ACA94;
-
-    --grey-4: #212529;
-    --grey-3: #868E96;
-    --grey-2: #E9ECEF;
-    --grey-1: #F8F9FA;
-
-    --title1-font-size: 1.75rem;
-    --title2-font-size: 1.5rem;
-    --title3-font-size: 1.25rem;
-    --title4-font-size: 1rem;
-    --headline-font-size: 1rem;
-    --body-font-size: 0.875rem;
-    --caption-font-size: 0.75rem;
-    --detail-font-size: 0.625rem;
-
-    --font-family: 'Inter', sans-serif;
-    --font-weight-bold: 700;
-    --font-weight-regular: 400;
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body, input, button, select, a {
-        font-family: 'Inter', sans-serif;
+      font-family: ${(props) => props.theme.fontFamily};
+      background-color: var(--grey-4);
     }
-    
-    h1{
-        color: white;
-        font-size: var(--size-title1);
-    }
-    
-    li, ol{
-        list-style: none;
-    }
-    
-    button{
-        cursor: pointer;
-        font-size: var(--size-button);
-        border: none;
-    }
-    
-    input{
-        border-radius: 4px;
-        padding-left: 10px;
-    }
-    
-    h2{
-        color: var(--grey-0);
-        font-size: var(--size-title2);
-    }
-    
-    h3{
-        color: var(--grey-0);
-        font-size: var(--size-title3);
-    }
-    
-    
-    
-    p, span{
-        font-size: var(--size-text);
-        color: var(--grey-1);
-    }
-    
-    label{
-        margin-bottom: 5px;
-    }
-    
-    body{
-        background-color: var(--grey-4);
-    }
-    
-    .subHeader{
-        border: 1px solid var(--grey-3);
-    }
-}
 
+    h1{
+      font-size: var(--title1-font-size);
+      color: var(--grey-1);
+      font-weight: 700;;
+    }
+
+    h2{
+      font-size: var(--title2-font-size);
+      color: var(--grey-1);
+      font-weight: var(--font-weight-bold);
+    }
+
+    p{
+      font-size: var(--body-font-size);
+      color: var(--grey-2);
+      font-weight: var(--font-weight-regular);
+    }
+
+    li, ol {
+      list-style: none;
+    }
+
+    button {
+      cursor: pointer;
+      font-size: var(--body-font-size);
+      border: none;
+    }
+
+    input {
+      border-radius: 4px;
+      padding-left: 10px;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+  }
 `

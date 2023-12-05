@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Header } from "../../components/header/Header";
 
 
 export class Home extends Component {
@@ -6,7 +7,7 @@ export class Home extends Component {
     render(){
         return(
             <>
-                <header>OLa</header>
+                <Header />
             </>
         )
     }
