@@ -36,6 +36,12 @@ export const GlobalStyle = createGlobalStyle`
     * {
       margin: 0;
       padding: 0;
+    }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
       box-sizing: border-box;
     }
 
@@ -44,10 +50,15 @@ export const GlobalStyle = createGlobalStyle`
       background-color: var(--grey-4);
     }
 
+    main{
+      width: 100%;
+      margin-top: 70px;
+    }
+
     h1{
       font-size: var(--title1-font-size);
       color: var(--grey-1);
-      font-weight: 700;;
+      font-weight: 700;
     }
 
     h2{
@@ -66,19 +77,15 @@ export const GlobalStyle = createGlobalStyle`
       list-style: none;
     }
 
+    a {
+      text-decoration: none;
+      color: var(--grey-1);
+    }
+
     button {
       cursor: pointer;
       font-size: var(--body-font-size);
       border: none;
-    }
-
-    input {
-      border-radius: 4px;
-      padding-left: 10px;
-    }
-
-    label {
-      margin-bottom: 5px;
     }
 
   }

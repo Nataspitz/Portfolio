@@ -16,7 +16,7 @@ export const defaultTheme = {
       grey5: "#0A0A0B",
       grey4: "#212529",
       grey3: "#868E96",
-      grey2: "#E9ECEF",
+      grey2: "#E9ECFA",
       grey1: "#F8F9FA",
     },
     fontSizes: {
@@ -26,7 +26,7 @@ export const defaultTheme = {
       title4: "1rem",
       headline: "0.875rem",
       body: "1rem",
-      caption: "0.75rem",
+      caption: "0.875rem",
       detail: "0.625rem",
     },
     fontFamily: "'Inter', sans-serif",
