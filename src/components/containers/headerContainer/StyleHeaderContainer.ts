@@ -6,7 +6,7 @@ export const StyleHeaderContainer = styled.header`
     width: 100%;
     border-bottom: 2px solid var(--color-primary);
     position: fixed;
-    z-index: 1;
+    z-index: 3;
 
     .containerMain {
         display: flex;

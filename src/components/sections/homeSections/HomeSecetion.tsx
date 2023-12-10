@@ -8,7 +8,7 @@ import { DescriptionArticle } from "./articles/description/DescriptionArticle";
 export function HomeSection() {
   return (
     <StyleHomeSection>
-      <PageContainer>
+      <PageContainer >
         <PerfilArtcle />
       </PageContainer>
       <TechList />

@@ -1,15 +1,25 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faCss3, faJs, faPython, faNode, faReact, faNpm, faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import {
+  faHtml5,
+  faCss3,
+  faJs,
+  faPython,
+  faNode,
+  faReact,
+  faNpm,
+  faNodeJs,
+  IconDefinition,
+} from "@fortawesome/free-brands-svg-icons";
 import { StyledTechList } from "./StyleTechsList";
 
-interface TechIcon {
-  icon: any; // ajuste o tipo conforme necessário
+interface ITechIcon {
+  icon: IconDefinition;
   name: string;
 }
 
 export function TechList() {
-  const icons: TechIcon[] = [
+  const icons: ITechIcon[] = [
     { icon: faHtml5, name: "HTML5" },
     { icon: faCss3, name: "CSS3" },
     { icon: faJs, name: "JavaScript" },
@@ -23,30 +33,38 @@ export function TechList() {
   const [currentPosition, setCurrentPosition] = useState(0);
 
   useEffect(() => {
-    // Função para avançar automaticamente o slide
     const autoSlide = setInterval(() => {
       setCurrentPosition((prevPosition) => {
         const newPosition = prevPosition + 1;
-        return newPosition < icons.length ? newPosition : 0;
+        return newPosition;
       });
-    }, 1000); // Tempo em milissegundos (1 segundo neste exemplo). Ajuste conforme necessário.
+    }, 1000);
 
-    // Limpar o intervalo após uma hora (3600000 milissegundos)
     setTimeout(() => {
       clearInterval(autoSlide);
     }, 3600000);
 
-    // Limpar o intervalo quando o componente for desmontado
     return () => clearInterval(autoSlide);
   }, [icons.length]);
 
-  // Criar um array com uma quantidade dinâmica de ícones
-  const duplicatedIcons: TechIcon[] = icons.flatMap(() => icons);
+  const totalDuplications = 100;
+  const visibleCards = 3;
+  const cardWidth = 60;
+
+  const duplicatedIcons: ITechIcon[] = Array.from(
+    { length: totalDuplications * icons.length + visibleCards },
+    (_, index) => icons[index % icons.length]
+  );
 
   return (
     <StyledTechList>
       <div className="slider">
-        <ul style={{ transform: `translateX(-${currentPosition * 60}px)` }}>
+        <ul
+          style={{
+            transform: `translateX(-${currentPosition * cardWidth}px)`,
+            width: `${(totalDuplications + 1) * icons.length * cardWidth}px`,
+          }}
+        >
           {duplicatedIcons.map((item, index) => (
             <li key={index}>
               <FontAwesomeIcon icon={item.icon} />

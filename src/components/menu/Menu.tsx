@@ -20,13 +20,13 @@ export function Menu({ menuAnimation, setOpenMenu }: IPropsMenu) {
           <Link to="/"  onClick={() => setOpenMenu(false)}>Home</Link>
         </li>
         <li>
-          <Link to="/projetos" onClick={() => setOpenMenu(false)}>Projetos</Link>
+          <Link to="/projetos" onClick={() => setOpenMenu(false)}>Projects</Link>
         </li>
         <li>
-          <Link to="/contatos" onClick={() => setOpenMenu(false)}>Contatos</Link>
+          <Link to="/contatos" onClick={() => setOpenMenu(false)}>Contacts</Link>
         </li>
         <li>
-          <Link to="/midias" onClick={() => setOpenMenu(false)}>Midias Digitas</Link>
+          <Link to="/midias" onClick={() => setOpenMenu(false)}>digital media</Link>
         </li>
       </ul>
     </StyleMenu>

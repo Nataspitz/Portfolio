@@ -36,6 +36,7 @@ export const GlobalStyle = createGlobalStyle`
     * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body{
@@ -48,11 +49,6 @@ export const GlobalStyle = createGlobalStyle`
     body, input, button, select, a {
       font-family: ${(props) => props.theme.fontFamily};
       background-color: var(--grey-4);
-    }
-
-    main{
-      width: 100%;
-      margin-top: 70px;
     }
 
     h1{

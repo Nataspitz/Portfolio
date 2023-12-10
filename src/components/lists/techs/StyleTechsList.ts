@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const StyledTechList = styled.div`
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   gap: 10px;
   overflow: hidden; 
   padding: 20px;
   position: relative;
+  width: 100%;
+  z-index: 0;
 
   ul {
     display: flex;
@@ -42,21 +44,8 @@ export const StyledTechList = styled.div`
     }
   }
 
-  button {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    background-color: var(--grey-2);
-    justify-content: center;
-    border-radius: 50%;
-    padding: 3px;
-  }
 
-  .next {
-    right: 20px;
-  }
-
-  .prev {
-    left: 20px;
+  @media(min-width: 768px){
+    width: 50%;
   }
 `;

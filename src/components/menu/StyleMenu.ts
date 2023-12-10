@@ -13,7 +13,7 @@ export const StyleMenu = styled(animated.div)`
     gap: 50px;
     margin: auto;
     background-color: var(--grey-5);
-    z-index: 0;
+    z-index: 1;
 
     ul {
         display: flex;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StylePerfilArticle = styled.article`
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     gap: 20px;
     align-items: center;
     max-width: 400px;
