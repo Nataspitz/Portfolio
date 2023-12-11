@@ -57,22 +57,22 @@ export function TechList() {
   );
 
   return (
-    <StyledTechList>
-      <div className="slider">
-        <ul
-          style={{
-            transform: `translateX(-${currentPosition * cardWidth}px)`,
-            width: `${(totalDuplications + 1) * icons.length * cardWidth}px`,
-          }}
-        >
-          {duplicatedIcons.map((item, index) => (
-            <li key={index}>
-              <FontAwesomeIcon icon={item.icon} />
-              <p>{item.name}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </StyledTechList>
+      <StyledTechList>
+        <div className="slider">
+          <ul
+            style={{
+              transform: `translateX(-${currentPosition * cardWidth}px)`,
+              width: `${(totalDuplications + 1) * icons.length * cardWidth}px`,
+            }}
+          >
+            {duplicatedIcons.map((item, index) => (
+              <li key={index}>
+                <FontAwesomeIcon icon={item.icon} />
+                <p>{item.name}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </StyledTechList>
   );
 }

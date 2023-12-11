@@ -4,6 +4,10 @@ export const StyleDescriptionArticle = styled.article`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  
+  @media(min-width: 768px){
+    width: 50%;
+  }
 
   h1 {
     margin-top: 20px;
@@ -21,11 +25,11 @@ export const StyleDescriptionArticle = styled.article`
     justify-content: flex-end;
     max-width: 500px;
     gap: 20px;
-
+    
     p {
-        color: var(--grey-3);
-        font-size: var(--caption-font-size);
-        font-weight: var(--font-weight-bold);
+      color: var(--grey-3);
+      font-size: var(--caption-font-size);
+      font-weight: var(--font-weight-bold);
     }
     
     cite {
@@ -38,23 +42,39 @@ export const StyleDescriptionArticle = styled.article`
   .aboutMe {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       gap: 20px;
-      
-      @media(min-width: 1000px){
-          display: flex;
-          flex-direction: row;
-          width: 50%;
+      border-radius: 10px;
+      background-color: var(--grey-5);
+      padding: 10px;
+
+      p{
+        color: var(--grey-1-75);
       }
-      .text__Left {
+      
+    .text {
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
 
-    .text__Right {
+    .rest_text {
       display: flex;
       flex-direction: column;
       gap: 20px;
+    }
+
+    button{
+      margin-top: 15px;
+      background-color: var(--grey-5);
+      width: 15%;
+      min-width: 50px;
+      border: 2px dotted  var(--grey-3);
+
+      svg{
+        color: var(--grey-3);
+      }
     }
   }
 `

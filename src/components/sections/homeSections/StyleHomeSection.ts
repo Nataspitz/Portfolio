@@ -5,15 +5,15 @@ export const StyleHomeSection = styled.section`
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-image: none;
+  padding-bottom:30px !important;
+  border-bottom: 2px solid var(--grey-1);
 
   @media (min-width: 768px) {
     background-image: url(${background});
     background-repeat: no-repeat;
     background-position: right -15px center;
-    background-size: 50%; /* Ajuste a porcentagem conforme necessário */
+    background-size: 50%;
   }
 
-  @media (max-width: 767px) {
-    background-image: none; /* Oculta a imagem em telas menores que 768px */
-  }
 `;

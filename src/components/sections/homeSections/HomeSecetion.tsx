@@ -3,6 +3,7 @@ import { PageContainer } from "../../containers/pageContainer/PageContainer";
 import { PerfilArtcle } from "./articles/perfil/PerfilArticle";
 import { TechList } from "../../lists/techs/TechList";
 import { DescriptionArticle } from "./articles/description/DescriptionArticle";
+import { LinksNavigations } from "../../linksNavigations/LinksNavigations";
 
 
 export function HomeSection() {
@@ -10,10 +11,9 @@ export function HomeSection() {
     <StyleHomeSection>
       <PageContainer >
         <PerfilArtcle />
-      </PageContainer>
-      <TechList />
-      <PageContainer>
+        <TechList />
         <DescriptionArticle />
+        <LinksNavigations />
       </PageContainer>
     </StyleHomeSection>
   );

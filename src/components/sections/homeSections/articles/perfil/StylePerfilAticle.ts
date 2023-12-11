@@ -7,7 +7,8 @@ export const StylePerfilArticle = styled.article`
     gap: 20px;
     align-items: center;
     max-width: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 30px !important;
+    margin-top: 60px;
 
     .image{
         display: flex;

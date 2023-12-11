@@ -2,36 +2,35 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --color-primary: ${(props) => props.theme.colors.primary};
-    --color-primary-50: ${(props) => props.theme.colors.primary50};
-    --color-secondary: ${(props) => props.theme.colors.secondary};
-    --color-secondary-50: ${(props) => props.theme.colors.secondary50};
-    --color-tertiary: ${(props) => props.theme.colors.tertiary};
-    --color-tertiary-50: ${(props) => props.theme.colors.tertiary50};
-    --color-quaternary: ${(props) => props.theme.colors.quaternary};
-    --color-quaternary-50: ${(props) => props.theme.colors.quaternary50};
-    --facebook-color: ${(props) => props.theme.colors.facebook};
-    --instagram-color: ${(props) => props.theme.colors.instagram};
-    --linkdIn-color: ${(props) => props.theme.colors.linkedIn};
+    --color-primary: #623CEA;
+    --color-primary-50: #311E75;
+    --color-secondary: #50CF9A;
+    --color-secondary-50: #E4F7EF;
+    --color-tertiary: #FF2253;
+    --color-tertiary-50: #FFE9EE;
+    --color-quaternary: #4ACA94;
+    --color-quaternary-50: #E4F7EF;
 
-    --grey-5: ${(props) => props.theme.colors.grey5};
-    --grey-4: ${(props) => props.theme.colors.grey4};
-    --grey-3: ${(props) => props.theme.colors.grey3};
-    --grey-2: ${(props) => props.theme.colors.grey2};
-    --grey-1: ${(props) => props.theme.colors.grey1};
+    --grey-5-75: #121214b8;
+    --grey-5: #0A0A0B;
+    --grey-4: #212529;
+    --grey-3: #868E96;
+    --grey-2: #E9ECFA;
+    --grey-1-75: #cfd0d1;
+    --grey-1: #F8F9FA;
 
-    --title1-font-size: ${(props) => props.theme.fontSizes.title1};
-    --title2-font-size: ${(props) => props.theme.fontSizes.title2};
-    --title3-font-size: ${(props) => props.theme.fontSizes.title3};
-    --title4-font-size: ${(props) => props.theme.fontSizes.title4};
-    --headline-font-size: ${(props) => props.theme.fontSizes.headline};
-    --body-font-size: ${(props) => props.theme.fontSizes.body};
-    --caption-font-size: ${(props) => props.theme.fontSizes.caption};
-    --detail-font-size: ${(props) => props.theme.fontSizes.detail};
+    --title1-font-size: 1.75rem;
+    --title2-font-size: 1.5rem;
+    --title3-font-size: 1.25rem;
+    --title4-font-size: 1rem;
+    --headline-font-size: 0.875rem;
+    --body-font-size: 1rem;
+    --caption-font-size: 0.875rem;
+    --detail-font-size: 0.625rem;
 
-    --font-family: ${(props) => props.theme.fontFamily};
-    --font-weight-bold: ${(props) => props.theme.fontWeight.bold};
-    --font-weight-regular: ${(props) => props.theme.fontWeight.regular};
+    --font-family: 'Inter', sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
 
     * {
       margin: 0;
@@ -39,31 +38,31 @@ export const GlobalStyle = createGlobalStyle`
       box-sizing: border-box;
     }
 
-    body{
+    body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       box-sizing: border-box;
-    }
-
-    body, input, button, select, a {
-      font-family: ${(props) => props.theme.fontFamily};
+      font-family: var(--font-family);
       background-color: var(--grey-4);
+      font-family: var(--font-family);
+      background-color: var(--grey-4);
+      color: var(--grey-1);
     }
 
-    h1{
+    h1 {
       font-size: var(--title1-font-size);
       color: var(--grey-1);
-      font-weight: 700;
+      font-weight: var(--font-weight-bold);
     }
 
-    h2{
+    h2 {
       font-size: var(--title2-font-size);
       color: var(--grey-1);
       font-weight: var(--font-weight-bold);
     }
 
-    p{
+    p {
       font-size: var(--body-font-size);
       color: var(--grey-2);
       font-weight: var(--font-weight-regular);
@@ -75,7 +74,6 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
       text-decoration: none;
-      color: var(--grey-1);
     }
 
     button {
@@ -83,6 +81,5 @@ export const GlobalStyle = createGlobalStyle`
       font-size: var(--body-font-size);
       border: none;
     }
-
   }
-`
+`;

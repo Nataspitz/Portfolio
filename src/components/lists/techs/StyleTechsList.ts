@@ -19,6 +19,20 @@ export const StyledTechList = styled.div`
     padding: 0;
     margin: 0;
     transition: transform 0.5s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background: linear-gradient(to bottom, transparent 0%, var(--background-color) 5%, var(--background-color) 95%, transparent 100%);
+    }
 
     li {
       flex-shrink: 0;
@@ -43,7 +57,6 @@ export const StyledTechList = styled.div`
       }
     }
   }
-
 
   @media(min-width: 768px){
     width: 50%;
