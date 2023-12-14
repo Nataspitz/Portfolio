@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { StyleLinksNavigations } from "./StyleLinksNavigations";
 import gitHub from "../../assets/Bt-Circle.png"
 
@@ -6,10 +5,12 @@ import gitHub from "../../assets/Bt-Circle.png"
 export function LinksNavigations() {
     return(
         <StyleLinksNavigations>
-            <Link to="/pkl">See Projects</Link>
-            <div className="">
+            <a className="projects" href="https://github.com/Nataspitz?tab=repositories" target="_blank"
+                >See All Projects
+            </a>
+            <a  className="github" href="https://github.com/Nataspitz"  target="_blank">
                 <img src={gitHub} alt="GitHub" />
-            </div>
+            </a>
         </StyleLinksNavigations>
     )
 }

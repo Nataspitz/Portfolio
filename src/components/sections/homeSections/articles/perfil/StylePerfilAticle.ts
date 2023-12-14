@@ -8,7 +8,7 @@ export const StylePerfilArticle = styled.article`
     align-items: center;
     max-width: 400px;
     margin-bottom: 30px !important;
-    margin-top: 60px;
+    margin-top: 60px !important;
 
     .image{
         display: flex;

@@ -7,7 +7,7 @@ export const StyleLinksNavigations = styled.div`
     flex-direction: row;
     gap: 30px;
 
-    a {
+    .projects{
         background-color: var(--color-primary);
         border-radius: 10px;
         color: var(--grey-1);
@@ -16,6 +16,12 @@ export const StyleLinksNavigations = styled.div`
 
         &:hover {
             background-color: var(--color-primary-50);
+        }
+    }
+
+    .github{
+        &:hover {
+            transform: scale(1.1);
         }
     }
 `

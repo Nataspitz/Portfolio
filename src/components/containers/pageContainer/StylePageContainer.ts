@@ -1,26 +1,11 @@
-import styled, { css } from "styled-components";
-
-interface IProps {
-    display?: string
-}
+import styled  from "styled-components";
 
 
-export const StylePageContainer = styled.div<IProps>`
+export const StylePageContainer = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 900px;
-    padding: 0 20px;
-    margin: auto;
+    padding: 0 20px !important;
+    margin: auto !important;
     height: 100%;
-    
-    ${({ display }) =>{
-        if (display === "none") {
-            return css`
-                @media(max-width: 768px;){
-                    display: none;
-                    background-color: red;
-                }
-            `
-        }
-    }}
 `
