@@ -1,4 +1,3 @@
-import React from 'react';
 import { StyleMain } from "../../components/main/StyleMain";
 import { ContactsSection } from "../../components/sections/ContactsSection/ContactsSection";
 import { FooterSection } from "../../components/sections/footerSection/FooterSection";
