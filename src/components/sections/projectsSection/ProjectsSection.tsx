@@ -5,7 +5,7 @@ import { StyleProjectsSection } from "./StyleProjectsSection";
 
 export function ProjectsSection() {
     return(
-        <StyleProjectsSection>
+        <StyleProjectsSection id="projects">
             <PageContainer>
                 <div className="mainInfos">
                     <h3>My Main Projects</h3>

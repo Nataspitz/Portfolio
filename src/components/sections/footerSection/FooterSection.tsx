@@ -6,7 +6,7 @@ import linkedin from "../../../assets/Linkedin.png";
 
 export function FooterSection() {
   return (
-    <StyleFooterSection>
+    <StyleFooterSection id="networks">
       <div className="containerFooter">
         <div className="perfilFotter">
           <img src={perfil} alt="perfil logo" />

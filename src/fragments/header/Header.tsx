@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react';
 import { HeaderContainer } from "../../components/containers/headerContainer/HeaderContainer";
 import { Menu } from "../../components/menu/Menu";
 import { useSpring, config } from "react-spring";
 
+
 export function Header() {
+
   const [openMenu, setOpenMenu] = useState(false);
 
   const openMenuConfig = {
@@ -24,7 +26,12 @@ export function Header() {
     <>
       <HeaderContainer openMenu={openMenu} setOpenMenu={setOpenMenu} />
       {menuAnimation.opacity.to((o) => o > 0.5) && (
-        openMenu? <Menu menuAnimation={menuAnimation} setOpenMenu={setOpenMenu} /> : null
+        openMenu ? 
+          <Menu
+            menuAnimation={menuAnimation}
+            setOpenMenu={setOpenMenu}
+          />
+        : null
       )}
     </>
   );

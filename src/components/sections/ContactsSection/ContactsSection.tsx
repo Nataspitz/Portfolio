@@ -5,7 +5,7 @@ import linkedin from "../../../assets/media.png";
 
 export function ContactsSection() {
   return (
-    <StyleContactsSection>
+    <StyleContactsSection id="contacts">
       <div className="contactsContainer">
         <div className="info__cta">
           <h2>

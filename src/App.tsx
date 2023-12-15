@@ -4,13 +4,14 @@ import { Home } from './pages/Home'
 
 
 function App() {
+
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <Home />
+      <Header/>
+      <Home/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

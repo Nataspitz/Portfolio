@@ -27,7 +27,6 @@ export function TechList() {
     { icon: faNode, name: "Node.js" },
     { icon: faReact, name: "React" },
     { icon: faNpm, name: "npm" },
-    { icon: faNodeJs, name: "Node.js" },
   ];
 
   const [currentPosition, setCurrentPosition] = useState(0);

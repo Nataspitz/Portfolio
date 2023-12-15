@@ -8,7 +8,7 @@ import { LinksNavigations } from "../../linksNavigations/LinksNavigations";
 
 export function HomeSection() {
   return (
-    <StyleHomeSection>
+    <StyleHomeSection id="home">
       <PageContainer >
         <PerfilArtcle />
         <TechList />
