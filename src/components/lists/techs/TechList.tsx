@@ -8,7 +8,6 @@ import {
   faNode,
   faReact,
   faNpm,
-  faNodeJs,
   IconDefinition,
 } from "@fortawesome/free-brands-svg-icons";
 import { StyledTechList } from "./StyleTechsList";
