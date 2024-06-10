@@ -1,5 +1,5 @@
 import { StylePerfilArticle } from "./StylePerfilAticle";
-import perfil from "../../../../../assets/perfil.jpg";
+import perfil from "../../../../../assets/perfil.png";
 
 export function PerfilArtcle() {
     

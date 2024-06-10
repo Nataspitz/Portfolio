@@ -1,5 +1,5 @@
 import { StyleFooterSection } from "./StylFooterSection";
-import perfil from "../../../assets/perfil.jpg";
+import perfil from "../../../assets/perfil.png";
 import facebook from "../../../assets/Facebook.png";
 import instagram from "../../../assets/Instagram.png";
 import linkedin from "../../../assets/Linkedin.png";
