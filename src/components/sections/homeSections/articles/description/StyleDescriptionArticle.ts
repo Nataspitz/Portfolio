@@ -51,8 +51,13 @@ export const StyleDescriptionArticle = styled.article`
 
       p{
         color: var(--grey-1-75);
+
       }
       
+      span{
+        /* color: var(--grey-1); */
+        font-weight:700;
+      }
     .text {
       display: flex;
       flex-direction: column;
@@ -65,16 +70,9 @@ export const StyleDescriptionArticle = styled.article`
       gap: 20px;
     }
 
-    button{
-      margin-top: 15px;
-      background-color: var(--grey-5);
-      width: 15%;
-      min-width: 50px;
-      border: 2px dotted  var(--grey-3);
-
-      svg{
-        color: var(--grey-3);
-      }
+    svg{
+      height: 25px;
+      width: 25px;
     }
   }
 `

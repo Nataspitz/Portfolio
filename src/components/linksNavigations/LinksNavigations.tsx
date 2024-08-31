@@ -6,7 +6,7 @@ export function LinksNavigations() {
     return(
         <StyleLinksNavigations>
             <a className="projects" href="https://github.com/Nataspitz?tab=repositories" target="_blank"
-                >See All Projects
+                >Meus projetos
             </a>
             <a  className="github" href="https://github.com/Nataspitz"  target="_blank">
                 <img src={gitHub} alt="GitHub" />

@@ -69,7 +69,7 @@ export const StyleContactsSection = styled.section`
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 0 20px !important;
     margin: auto !important;
     height: 100%;

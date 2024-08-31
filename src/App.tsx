@@ -1,6 +1,5 @@
 import { GlobalStyle } from './styles/GlobalStyle'
-import { Header } from './fragments/header/Header'
-import { Home } from './pages/Home'
+import { RouterMain } from './routes/RouterMain';
 
 
 function App() {
@@ -8,8 +7,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header/>
-      <Home/>
+      <RouterMain/>
     </>
   );
 }

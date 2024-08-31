@@ -12,7 +12,7 @@ export const StyleMenu = styled(animated.div)`
     align-items: center;
     gap: 50px;
     margin: auto;
-    background-color: var(--grey-5);
+    background-color: var(--grey-5-75);
     z-index: 1;
 
     ul {
@@ -25,6 +25,7 @@ export const StyleMenu = styled(animated.div)`
         a {
             color: var(--grey-3);
             font-size: var(--caption-font-size);
+            font-weight: 800;
             background-color: transparent;
             padding: 8px 16px;
 

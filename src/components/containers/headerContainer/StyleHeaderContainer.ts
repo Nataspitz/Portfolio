@@ -12,7 +12,7 @@ export const StyleHeaderContainer = styled.header`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 900px;
+        max-width: 1200px;
         padding: 0 20px;
         margin: auto;
         height: 100%;

@@ -6,7 +6,7 @@ export const StyleHomeSection = styled.section`
   height: 100%;
   background-size: cover;
   background-image: none;
-  padding-bottom:30px !important;
+  padding: 30px 0 !important;
   border-bottom: 2px solid var(--grey-1);
 
   @media (min-width: 768px) {

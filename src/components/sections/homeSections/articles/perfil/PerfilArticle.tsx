@@ -8,7 +8,7 @@ export function PerfilArtcle() {
             <div className="image">
                 <img src={perfil} alt="Minha foto" />
             </div>
-            <p>Hello there!! My name is Natã</p>     
+            <p>Olá mundo, meu nome é Natã</p>     
         </StylePerfilArticle>
     )
 }
